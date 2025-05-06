@@ -4,9 +4,7 @@
 
 body {
     font-family: sans-serif;
-    text-align: center;
-    height: 100vh;
-    
+    text-align: center;    
     justify-content: center;
     align-items: center;
     font-family: "Rubik", sans-serif;
@@ -20,7 +18,8 @@ body {
 .slot-container {
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 1.5em;
+    margin-top: 50px;
 }
 
 .slot {
@@ -86,6 +85,8 @@ body {
 @media screen and (min-width: 1200px) {
     .slot-container {
         display: flex;
+        margin-top: 0;
+        font-size: 2em;
     }
 
     .generate-button,
@@ -97,6 +98,7 @@ body {
         display: flex;
         margin: 0;
         padding: 0;
+        height: 100vh;
     }
 
     .slot {
