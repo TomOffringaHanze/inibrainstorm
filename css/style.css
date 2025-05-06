@@ -2,7 +2,7 @@ body {
     font-family: sans-serif;
     text-align: center;
     height: 100vh;
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     font-family: "Rubik", sans-serif;
@@ -10,10 +10,12 @@ body {
     font-style: normal;
     margin: 0;
     padding: 0;
+    
+    padding: 20px;
+    padding-top: 200px;
 }
 
 .slot-container {
-    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2em;
@@ -22,7 +24,7 @@ body {
 .slot {
     padding: 10px;
     overflow: hidden;
-    display: flex;
+    height: 100px;
     align-items: center;
     justify-content: center;
 }
@@ -32,7 +34,7 @@ body {
     width: 199px;
     height: 100px;
     line-height: 79px;
-    font-size: 20px;
+    font-size: 24px;
     font-family: "Bebas Neue", sans-serif;
     background: linear-gradient(45deg, transparent 5%, #ee7f02 5%);
     border: 0;
@@ -77,6 +79,27 @@ body {
     cursor: pointer;
     animation: 1s glitch;
     animation-timing-function: steps(2, end);
+}
+
+@media screen and (min-width: 1200px) {
+    .slot-container {
+        display: flex;
+    }
+
+    .generate-button,
+    .generate-button:after {
+        font-size: 20px;
+    }
+
+    body {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .slot {
+        height: auto;
+    }
 }
 
 @keyframes glitch {
